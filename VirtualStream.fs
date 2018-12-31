@@ -149,6 +149,7 @@ type VirtualStream (?thresholdSize, ?flag, ?dataStream, ?forAsync) as x =
             else cleanUp ()
         finally base.Dispose disposing
 
+[<AutoOpen>]
 module StreamExtensions =
     type Stream with
         /// <summary>
